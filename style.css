@@ -1,112 +1,85 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  display: none;
   height: 100vh;
-  background: pink;
+  width: 100%;
+}
+
+.page.active {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
+  align-items: center;
+  background: pink;
 }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  width: 320px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.main-img {
-  width: 220px;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto 15px;
-}
-
-#yesBtn {
-  background: #ff4d6d;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  font-size: 16px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#noBtn {
-  position: absolute;
-  bottom: 60px;
-  background: #ddd;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.note {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-
-body {
-  background: linear-gradient(to bottom, #ffb6c1, #ffd1dc);
-  font-family: Arial, sans-serif;
-  text-align: center;
-  height: 100vh;
-}
-
+/* CARD */
 .card {
   background: white;
-  width: 350px;
-  margin: auto;
   padding: 30px;
-  border-radius: 20px;
-  margin-top: 100px;
+  border-radius: 15px;
+  text-align: center;
+  width: 280px;
 }
 
-.cat {
+.image {
   width: 120px;
+  margin-bottom: 15px;
 }
 
 button {
   padding: 10px 25px;
-  font-size: 18px;
   border: none;
   border-radius: 20px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
 }
 
-#yesBtn {
-  background-color: #ff4d6d;
-  color: white;
+.hint {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-#noBtn {
-  background-color: #ddd;
+.no-btn {
+  position: absolute;
+  bottom: 40px;
+  background: #ddd;
+  color: black;
 }
 
-.buttons {
-  margin-top: 20px;
+/* PAGE 2 */
+.final-page {
+  background: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-.result-img {
-  max-width: 300px;      /* controls size */
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;     /* centers the image */
+.panda {
+  width: 300px;
+  margin-bottom: 20px;
 }
 
-.card {
-  text-align: center;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 400px;
-  margin: 50px auto;
+/* PAGE 3 */
+.forever-page {
+  background: #ffccd5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forever-img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #d6336c;
 }
