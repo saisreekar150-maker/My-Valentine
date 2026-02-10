@@ -19,8 +19,8 @@ noBtn.addEventListener("mouseover", () => {
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div class="card">
-      <img src="https://i.imgur.com/Q9BGTuy.png" class="cat">
-      <h1>Yay! 💖</h1>
+      <img src="pic.png" class="result-img">
+      <h1 class="yay">Yay! 💖</h1>
       <p>${from} will be so happy!</p>
     </div>
   `;
