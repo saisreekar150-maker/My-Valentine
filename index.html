@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Valentine 💖</title>
+  <meta charset="UTF-8">
+  <title>My Valentine</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <!-- Panda Image -->
-    <img src="panda.png" alt="Cute Panda" class="main-img">
+  <!-- PAGE 1 -->
+  <div id="page1" class="page active">
+    <div class="card">
+      <img src="pic.png" alt="Cute Image" class="image">
+      <h2>You, will you be my Valentine?</h2>
 
-    <h2>You, will you be my Valentine?</h2>
+      <button id="yesBtn">Yes ❤️</button>
+      <p class="hint">"No" seems a bit shy 😈</p>
+    </div>
 
-    <button id="yesBtn">Yes</button>
-    <p class="note">"No" seems a bit shy 😈</p>
+    <button id="noBtn" class="no-btn">No</button>
   </div>
 
-  <button id="noBtn">No</button>
+  <!-- PAGE 2 (FINAL PAGE) -->
+  <div id="page2" class="page final-page">
+    <img src="panda.png" alt="Panda" class="panda">
+  </div>
 
   <script src="script.js"></script>
 </body>
