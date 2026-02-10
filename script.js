@@ -1,28 +1,16 @@
-const params = new URLSearchParams(window.location.search);
-const from = params.get("from") || "sree😊laha";
-const to = params.get("to") || "You";
-
-document.getElementById("question").innerText =
-  `${to}, will you be my Valentine?`;
-
-const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
-const hint = document.getElementById("hint");
+const nextBtn = document.getElementById("nextBtn");
 
-noBtn.addEventListener("mouseover", () => {
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 100);
-  noBtn.style.left = `${x}px`;
-  noBtn.style.top = `${y}px`;
-});
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const page3 = document.getElementById("page3");
 
 yesBtn.addEventListener("click", () => {
-  document.body.innerHTML = `
-    <div class="card">
-      <img src="pic.png" class="result-img">
-      <h1 class="yay">Yay! 💖</h1>
-      <p>${from} will be forever</p>
-    </div>
-  `;
+  page1.style.display = "none";
+  page2.style.display = "flex";
 });
 
+nextBtn.addEventListener("click", () => {
+  page2.style.display = "none";
+  page3.style.display = "flex";
+});
