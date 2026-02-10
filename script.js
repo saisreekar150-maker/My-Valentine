@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const from = params.get("from") || "Someone";
+const from = params.get("from") || "sree😊laha";
 const to = params.get("to") || "You";
 
 document.getElementById("question").innerText =
@@ -21,7 +21,7 @@ yesBtn.addEventListener("click", () => {
     <div class="card">
       <img src="pic.png" class="result-img">
       <h1 class="yay">Yay! 💖</h1>
-      <p>${from} will be so happy!</p>
+      <p>${from} will be forever!</p>
     </div>
   `;
 });
