@@ -38,3 +38,16 @@ button {
 .buttons {
   margin-top: 20px;
 }
+
+
+
+
+.result-img {
+  max-width: 300px;      /* controls size */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;     /* centers the image */
+}
+
+
