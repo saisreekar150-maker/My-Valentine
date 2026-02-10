@@ -9,24 +9,19 @@ const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 const hint = document.getElementById("hint");
 
-/* YES button blinking when page loads */
-yesBtn.classList.add("blink");
-
-/* NO button runs away */
 noBtn.addEventListener("mouseover", () => {
   noBtn.style.position = "absolute";
   noBtn.style.left = Math.random() * 80 + "%";
   noBtn.style.top = Math.random() * 80 + "%";
-  hint.innerText = `"Yes" catch me `🥳;
+  hint.innerText = `"No" seems a bit shy 😈`;
 });
 
-/* YES click */
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div class="card">
-      <img src="pic.png" class="result-img">
-      <h1 class="WIfi mode on">! 💖</h1>
-      <p>${from} will be happy!</p>
+      <img src="https://i.imgur.com/Q9BGTuy.png" class="cat">
+      <h1>Yay! 💖</h1>
+      <p>${from} will be so happy!</p>
     </div>
   `;
 });
