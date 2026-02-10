@@ -13,14 +13,14 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.position = "absolute";
   noBtn.style.left = Math.random() * 80 + "%";
   noBtn.style.top = Math.random() * 80 + "%";
-  hint.innerText = `"No" will you join life with me 😈`;
+  hint.innerText = `"yes" catch me 🥳`;
 });
 
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div class="card">
-      <img src="https://i.imgur.com/Q9BGTuy.png" class="cat">
-      <h1>Yay! 💖</h1>
+      <img src="yay.png" class="result-img">
+      <h1 class="yay">Yay! 💖</h1>
       <p>${from} will be so happy!</p>
     </div>
   `;
