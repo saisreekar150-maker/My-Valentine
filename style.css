@@ -1,4 +1,56 @@
 body {
+  margin: 0;
+  height: 100vh;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.main-img {
+  width: 220px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#noBtn {
+  position: absolute;
+  bottom: 60px;
+  background: #ddd;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+body {
   background: linear-gradient(to bottom, #ffb6c1, #ffd1dc);
   font-family: Arial, sans-serif;
   text-align: center;
