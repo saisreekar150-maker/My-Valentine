@@ -1,9 +1,40 @@
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
+body {
+  background: linear-gradient(to bottom, #ffb6c1, #ffd1dc);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
 }
 
-.blink {
-  animation: blink 1s infinite;
+.card {
+  background: white;
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.cat {
+  width: 120px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background-color: #ddd;
+}
+
+.buttons {
+  margin-top: 20px;
 }
