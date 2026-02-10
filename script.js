@@ -21,7 +21,8 @@ yesBtn.addEventListener("click", () => {
     <div class="card">
       <img src="pic.png" class="result-img">
       <h1 class="yay">Yay! 💖</h1>
-      <p>${from} will be forever!</p>
+      <p>${from} will be forever</p>
     </div>
   `;
 });
+
