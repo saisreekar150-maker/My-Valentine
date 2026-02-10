@@ -50,4 +50,11 @@ button {
   margin: 20px auto;     /* centers the image */
 }
 
-
+.card {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+}
