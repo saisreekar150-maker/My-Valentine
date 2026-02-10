@@ -10,10 +10,10 @@ const yesBtn = document.getElementById("yesBtn");
 const hint = document.getElementById("hint");
 
 noBtn.addEventListener("mouseover", () => {
-  noBtn.style.position = "absolute";
-  noBtn.style.left = Math.random() * 80 + "%";
-  noBtn.style.top = Math.random() * 80 + "%";
-  hint.innerText = `"No" seems a bit shy 😈`;
+  const x = Math.random() * (window.innerWidth - 100);
+  const y = Math.random() * (window.innerHeight - 100);
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
 });
 
 yesBtn.addEventListener("click", () => {
